@@ -1,12 +1,12 @@
 from pydantic import BaseModel
 
-class Todo(BaseModel):
+class Task(BaseModel):
   uid: str
   title: str
   description: str
   status: int
 
-class TodoNoId(BaseModel):
+class TaskNoId(BaseModel):
   title: str
   description: str
   status: int
