@@ -6,6 +6,7 @@ from documentation.tags import tags_metadata
 
 #Importing routes
 import routers.router_auth
+import routers.router_todos
 
 api = FastAPI(
   title="todo-list-api",
@@ -15,3 +16,4 @@ api = FastAPI(
 )
 
 api.include_router(routers.router_auth.router)
+api.include_router(routers.router_todos.router)
